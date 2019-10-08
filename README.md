@@ -7,3 +7,9 @@ This is my first individual school project in the Front Dev class at KYH Stockho
 8 okt 
     Påbörjar redogörelsen: brainstorm, todo, definition av innehåll och funktionalitet
     Startar upp github
+    Gör ett html-skal 
+        navbar med anchor-links
+        aktuella sektioner med lorem ipsum
+        
+
+        

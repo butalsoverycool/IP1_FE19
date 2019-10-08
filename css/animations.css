@@ -1,0 +1,24 @@
+/*
+* CSS ANIMATIONS
+*****************************/
+
+@keyframes appear-to-right {
+    0% {
+        transform: translate(0);
+    }100% {
+        transform: translate(100%);
+    }
+}
+
+@keyframes appear-to-left {
+    0% {
+        transform: translate(0);
+    }100% {
+        transform: translate(-100%);
+    }
+}
+
+.hover-grow:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+}

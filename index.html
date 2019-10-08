@@ -1,28 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="se">
   <head>
     <meta charset="utf-8" />
+    
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
     <meta name="description" content="" />
     <title>Individuell Projektuppgift 1, FE19 Kim Nkoubou</title> 
       
-    <link rel="stylesheet" href="style.css"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css"/>
 
     <!-- Bootstrap 3 (latest compiled and minified CSS) -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
-
-    <!-- Jquery -->
-    	<!-- from google 
+      
+      
+    <!--Jquery-->
+    <!-- from google -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    -->
+      
+    <!-- Bootstrap js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- tryin out appear.js for elem-detection on scroll 
+    (http://creativelive.github.io/appear/) -->
+    <!-- <script src="appear1.2.1.js"></script> -->
+      
+      
+    <!-- CUSTOM CSS ANIMATIONS -->
+    <link rel="stylesheet" type="text/css" href="css/animations.css" />
+
 </head>
 
 <body>
-    <header>
+<div id="wrapper">
+    <header>  
+        <!-- NAV -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#theNav">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- LOGO (kyh.se-link) -->
+                    <a class="link_logotype navbar-brand hover-grow" href="https://kyh.se">
+                        <img src="" alt="logo_" />
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="theNav">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Hem</a></li>
+                        <li><a href="#listen-wrap">Lyssna</a></li>
+                        <li><a href="#about-wrap">Om</a></li>
+                        <li><a href="#contact-wrap">Kontakta oss</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
+    
     <main>
-    </main>
-</body>
+        <h1>Förgyll din tillställning med vacker musik och sång</h1>
+        <div class="section-wrap" id="pres-wrap">
+            <h2>För Bröllopet, dopet, minnesstunden och festen</h2>
+            <p>Med vacker sång ackompanjerat av känslofyllt piano lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus laoreet non curabitur gravida arcu ac. Molestie a iaculis at erat pellentesque. Tellus in metus vulputate eu scelerisque. Vel orci porta non pulvinar neque. Dui nunc mattis enim ut tellus elementum sagittis. Amet purus gravida quis blandit turpis cursus in hac. Aliquet bibendum enim facilisis gravida neque convallis a cras. Ut porttitor leo a diam sollicitudin tempor id. Volutpat maecenas volutpat blandit aliquam etiam erat velit.
+            </p>
+            <img class="section-img pres-img" alt="pres_img_1" src="https://images.unsplash.com/photo-1528808643989-d381fb9a856e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2376&q=80" />
+        </div>
 
+        <div class="section-wrap" id="listen-wrap">
+            <h2>Lyssna</h2>
+            <p>Porttitor rhoncus dolor purus non enim praesent elementum facilisis. Viverra vitae congue eu consequat ac felis donec et. Semper eget duis at tellus at urna condimentum. Nulla facilisi nullam vehicula ipsum a arcu. Elementum pulvinar etiam non quam lacus. Pulvinar sapien et ligula ullamcorper. Facilisis magna etiam tempor orci eu lobortis elementum. Porta lorem mollis aliquam ut. At varius vel pharetra vel turpis. Ante in nibh mauris cursus mattis molestie a. Quisque non tellus orci ac auctor augue mauris. Gravida neque convallis a cras. Volutpat blandit aliquam etiam erat velit scelerisque. Neque sodales ut etiam sit amet nisl purus in mollis. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Nisl nisi scelerisque eu ultrices vitae auctor eu. Est ullamcorper eget nulla facilisi etiam dignissim diam. Mauris cursus mattis molestie a iaculis.</p>
+            
+            <img class="section-img pres-img" alt="info_img_1" src="https://images.unsplash.com/photo-1528808643989-d381fb9a856e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2376&q=80" />
+        </div> <!-- info-wrap -->
+        
+        <div class="section-wrap" id="about-wrap">
+            <h2>Om oss</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus laoreet non curabitur gravida arcu ac. Molestie a iaculis at erat pellentesque. Tellus in metus vulputate eu scelerisque. Vel orci porta non pulvinar neque. Dui nunc mattis enim ut tellus elementum sagittis. Amet purus gravida quis blandit turpis cursus in hac. Aliquet bibendum enim facilisis gravida neque convallis a cras. Ut porttitor leo a diam sollicitudin tempor id. Volutpat maecenas volutpat blandit aliquam etiam erat velit.
+            </p>
+            
+            <img class="section-img pres-img" alt="pres_img_1" src="https://images.unsplash.com/photo-1528808643989-d381fb9a856e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2376&q=80" />
+        </div>
+        
+    </main>
+    <footer>
+        <div class="section-wrap" id="contact-wrap">
+            <h2>Kontakta oss</h2>
+            
+            <form name="contact-form" id="contact-form" action="">
+                <label for="name">Namn</label>
+                <input id="name" type="text" />
+                
+                <label for="msg">Meddelande</label>
+                <textarea id="msg" rows="5"></textarea> 
+                
+                <label for="ref">Hur hittade du oss?</label>
+                <p id="ref">(options...)</p>
+                
+                <input type="submit" value="Skicka" />
+            </form>
+        </div>
+    </footer>
+</div> <!-- wrapper -->  
+    
+    <!-- interaction.js -->
+    <script src="js/interaction.js"></script>
+</body>
 </html>

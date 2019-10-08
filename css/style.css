@@ -1,0 +1,56 @@
+/*
+*
+* HEADER
+*******************************************/
+
+
+/*
+*
+* NAV
+*******************************************/
+
+/* PADDING FOR NAV */
+body { padding-top: 50px; }
+
+/* LOGO */
+.link_logotype{
+    position: relative;
+    left: -100px;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: appear-to-right 1s ease-in-out normal 1 forwards; /* Safari & Chrome */
+    -moz-animation: appear-to-right 1s ease-in-out normal 1 forwards; /* Firefox */
+    -ms-animation: appear-to-right 1s ease-in-out normal 1 forwards; /* Internet Explorer */
+    -o-animation: appear-to-right 1s ease-in-out normal 1 forwards;
+    animation: appear-to-right 1s ease-in-out normal 1 forwards;
+}
+
+.link_logotype img {
+    width: 100px;
+}
+
+/* TOGGLE COLLAPSE BTN */
+.navbar-toggle {
+    right: -50px;
+    -webkit-animation: appear-to-left 1s ease-in-out normal 1 forwards; /* Safari & Chrome */
+    -moz-animation: appear-to-left 1s ease-in-out normal 1 forwards; /* Firefox */
+    -ms-animation: appear-to-left 1s ease-in-out normal 1 forwards; /* Internet Explorer */
+    -o-animation: appear-to-left 1s ease-in-out normal 1 forwards;
+    animation: appear-to-left 1s ease-in-out normal 1 forwards; 
+}
+
+
+/*
+* MAIN SECTIONS
+******************************************/
+.section-wrap {
+
+}
+
+
+/* IMGS */
+
+.section-img {
+    width: 100px;
+    max-height: 100px;
+}
