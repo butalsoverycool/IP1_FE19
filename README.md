@@ -11,5 +11,18 @@ This is my first individual school project in the Front Dev class at KYH Stockho
         navbar med anchor-links
         aktuella sektioner med lorem ipsum
         
+9 okt 
+    Strukturerar upp html
+        nav
+        main-sektioner
+        footer
+            kontaktformulär
+    layout
+        flexboxar sidan to death!
+        löpande rwd i style.css
+    interaktion
+        autoscroll vid klick på navlänkar i interaction.js
+            valde att köra js-Elements egen scrollIntoView() ist för nån plugin
+                https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
 
         

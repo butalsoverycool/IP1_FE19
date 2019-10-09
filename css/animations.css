@@ -4,21 +4,41 @@
 
 @keyframes appear-to-right {
     0% {
-        transform: translate(0);
+        transform: translate(-110%);
     }100% {
-        transform: translate(100%);
+        transform: translate(0);
     }
 }
 
 @keyframes appear-to-left {
     0% {
-        transform: translate(0);
+        transform: translate(110%);
     }100% {
-        transform: translate(-100%);
+        transform: translate(0);
     }
 }
 
+@keyframes smooth-pulse {
+    0% {
+        transform: scale(1);
+        
+    }100% {
+        transform: scale(1.05);   
+        filter: brightness(2);
+    }
+}
+
+/*
+* CLASS- & EVENT TRIGGERS
+*******************************************/
+
 .hover-grow:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
+    filter: contrast(1.5);
     transition-duration: 1s;
 }
+
+.smooth-pulse{
+    animation: smooth-pulse .4s alternate .5s 2; 
+}
+

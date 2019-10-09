@@ -1,0 +1,139 @@
+/*
+* BOOTSTRAP OVERRIDE 
+*******************************/
+nav {
+    border: none!important;
+}
+
+
+.container-fluid {
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+
+.navbar-header {
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+
+.navbar-toggle {
+    width: 44px;
+    height: 40px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.navbar-collapse {
+    border: none!important;
+}
+
+.nav.navbar-nav>li {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+.nav.navbar-nav>li>span {
+    color: #C9C9C9;
+    cursor: pointer;
+    background: none!important;
+    margin-right: 20px;
+}
+
+
+.nav.navbar-nav>li>span:hover {
+    color: #FFF;
+    transition-duration: .3s;
+}
+
+@media (max-width: 599px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        
+    }
+    .navbar-collapse.collapse.show {
+        
+    }
+    .navbar-nav {
+        background: #181818;
+        float: none!important;
+        margin-top: 0;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li.active>a {
+        background-color: #1B1B1B!important;
+    }
+    .navbar-nav>li>span {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+
+@media (min-width: 600px) {
+    .navbar-header {
+        float: left;
+        margin: 0!important;
+    }
+    .navbar-left,.navbar-right {
+        float: left !important;
+    }
+    .navbar-toggle {
+        display: none;
+    }
+    .navbar-collapse {
+        border: none;
+        margin-left: 0!important;
+        margin-right: 0!important;
+        padding: 0!important;
+        box-shadow: none;
+        width: auto!important;
+        overflow: visible!important;
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: flex!important;
+        justify-content: flex-end;
+    }
+    .navbar-nav {
+        float: left!important;
+        margin: 0;
+    }
+    .navbar-nav>li {
+        float: left;
+    }
+    .navbar-nav>li>span {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
