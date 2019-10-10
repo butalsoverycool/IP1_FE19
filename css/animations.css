@@ -32,10 +32,22 @@
 * CLASS- & EVENT TRIGGERS
 *******************************************/
 
-.hover-grow:hover {
+.grow-contrast-fx {
+    transition-duration: 1s;
+}
+
+.grow-contrast-fx:hover {
     transform: scale(1.1);
     filter: contrast(1.5);
-    transition-duration: 1s;
+}
+
+.grow-fx {
+    transition-duration: .3s;
+    transition-timing-function: ease-out;
+}
+
+.grow-fx:hover {
+    transform: scale(1.05);
 }
 
 .smooth-pulse{

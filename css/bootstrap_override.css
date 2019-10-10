@@ -21,6 +21,7 @@ nav {
     height: 40px;
     padding: 10px;
     margin: 5px;
+    transition-duration: .3s;
 }
 
 .navbar-collapse {
@@ -41,12 +42,13 @@ nav {
     cursor: pointer;
     background: none!important;
     margin-right: 20px;
+    transition-duration: .3s;
 }
 
 
 .nav.navbar-nav>li>span:hover {
     color: #FFF;
-    transition-duration: .3s;
+    
 }
 
 @media (max-width: 599px) {

@@ -1,5 +1,5 @@
 ### README FE19 IP1 Kim Nkoubou ###
-This is my first individual school project in the Front Dev class at KYH Stockholm, Sweden 2019 - in the form of a simple website for a artist duo. 
+This is my first individual school project in the Front Dev class at KYH Stockholm, Sweden 2019 - in the form of a simple website for a band of two. 
 // Kim Nkoubou -> https://kiiim.se
 
 
@@ -24,5 +24,7 @@ This is my first individual school project in the Front Dev class at KYH Stockho
         autoscroll vid klick på navlänkar i interaction.js
             valde att köra js-Elements egen scrollIntoView() ist för nån plugin
                 https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
+10 okt   
+    fake-formvalidation med js
 
         

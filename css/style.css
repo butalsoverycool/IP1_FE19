@@ -7,6 +7,10 @@ body {
     color: #C9C9C9;
 }
 
+main {
+    margin-top: 50px; /* navbar height */
+}
+
 h1 {
     text-align: center;
 }
@@ -36,6 +40,39 @@ p {
     background: #0A0A0A;
 }
 
+.link-btn {
+    max-width: 200px;
+    margin: auto;
+    border-radius: 10px;
+    transition-duration: .3s;
+    color: #222;
+}
+
+.link-btn:hover {
+    filter: brightness(.8);   
+}
+
+.link-btn > a {
+    color: #222;
+    padding: 10px;
+}
+.link-btn > a:hover {
+    text-decoration: none;
+}
+
+/*
+* OUTER BOX
+***************/
+#wrapper {
+    width: 100%;
+}
+
+@media (min-width: 1000px) {
+    #wrapper {
+        margin: auto;
+        width: 1000px;
+    }
+}
 
 /*
 *
@@ -113,15 +150,15 @@ p {
     align-content: space-between;
     align-items: stretch;
     
-    padding: 0 20px;
+    padding: 0;
     
     min-height: 500px;
-    
 }
-#intro-wrap {
-    margin-top: 50px; /* navbar height */
-    min-height: auto;
+
+.flex-col {
+    flex-direction: column!important;
 }
+
 
 .section-wrap.flex-cont > div {
     display: flex;
@@ -148,9 +185,7 @@ p {
         min-height: 300px;
     }
 }
-#contact-wrap .title-cont {
-    min-height: 200px;
-}
+
 
 .section-wrap.flex-cont .title-cont > h2 {
     margin: 0;
@@ -191,7 +226,23 @@ p {
     }
 }
 
+#intro-wrap {
+    
+    min-height: auto;
+}
 
+#pres-wrap .link-btn {
+    width: auto;
+    height: auto;
+    max-width: unset;
+    max-height: unset;
+    font-size: 2em;
+    margin: 50px auto;
+}
+
+#contact-wrap .title-cont {
+    min-height: 200px;
+}
 
 /* IMGS */
 
@@ -251,8 +302,11 @@ p {
     margin-top: 0!important;
 }
 
+.contact-radio:first-of-type {
+    margin-top: 5px!important;
+}
+
 .contact-radio > * {
-    height: 100%;
     margin: 5px!important;
 }
 
@@ -261,18 +315,57 @@ p {
     margin-right: 10px;
 }
 
+#contact-form .error {
+    font-style: italic;
+    color: hotpink;
+    font-weight: 700;
+}
+
 @media screen and (max-width: 599px) {
     #contact-wrap .flex-cont > * {
         width: 80vw;
         max-width: 80vw;
     }
-    #contact-name {
+    #contact-name,
+    #contact-email{
         width: 200px!important;
     }
     #contact-submit {
         width: 100px!important;
         height: 50px;
     }
+}
+
+/*
+* CONTACT-MADE-PAGE
+*************************/
+#thanks-wrap {
+    align-items: center;
+    min-height: unset;
+    
+}
+#thanks-wrap .title-cont {
+    min-height: unset;
+}
+
+#thanks-wrap .material-cont {
+    display: block;
+    text-align: left;
+    width: 200px!important; 
+    background: whitesmoke;
+    border-radius: 3px;
+}
+
+#thanks-wrap .material-cont p {
+    font-size: .8em;
+    margin: auto;
+    color: #333;
+    
+}
+
+#thanks-wrap .material-cont p span {
+    font-style: italic;
+    color: #222;
 }
 
 

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <meta name="description" content="" />
+    <title>Individuell Projektuppgift 1, FE19 Kim Nkoubou - contact</title> 
+      
+    <!-- CSS RESET -->
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+
+
+    <!-- Bootstrap 3 (latest compiled and minified CSS) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+      
+    <!-- Bootstrap override -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap_override.css" />
+      
+    
+      
+    <!--Jquery-->
+    <!-- from google -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      
+    <!-- Bootstrap js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- tryin out appear.js for elem-detection on scroll 
+    (http://creativelive.github.io/appear/) -->
+    <!-- <script src="appear1.2.1.js"></script> -->
+    
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/animations.css" />
+</head>
+
+<body>
+<div id="wrapper">
+    <header>  
+        <!-- NAV -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#theNav">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- LOGO (kyh.se-link) -->
+                    <span class="link_logotype navbar-brand" data-link="intro-wrap">
+                        <img class="hover-grow" src="../media/de_la_mottez.svg" alt="de_la_mottez_logo" />
+                    </span>
+                </div>
+                <div class="collapse navbar-collapse flex-cont" id="theNav">
+                    <ul class="nav navbar-nav">
+                        <li><span data-link="listen-wrap">Lyssna</span></li>
+                        <li><span data-link="about-wrap">Om</span></li>
+                        <li><span data-link="contact-wrap">Kontakta oss</span></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="section-wrap flex-cont flex-col" id="thanks-wrap">
+            <div class="title-cont">
+                <h1>Tack för ditt meddelande!</h1>
+            </div>
+            <div class="material-cont">
+                <p class="name">Namn: <span></span></p>
+                <p class="email">Epost: <span></span></p>
+                <p class="msg">Meddelande: <br/> <span></span></p>
+                <p class="ref">Hittade oss via: <span></span></p>
+            </div>
+            <p>Vi återkommer så fort vi kan.</p>
+            <button class="link-btn">
+                <a href="../index.html"><span>Tillbaka till huvudsidan</span></a>
+            </button>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+</div> <!-- wrapper -->  
+    
+    <!-- interaction.js -->
+    <script src="../js/interaction.js"></script>
+    <script>
+        $(function() {
+            $('.name span').html( sessionStorage.getItem('name') );
+            $('.email span').html( sessionStorage.getItem('email') );
+            $('.msg span').html( sessionStorage.getItem('msg') );
+            $('.ref span').html( sessionStorage.getItem('ref') );
+        });
+    </script>
+</body>
+</html>

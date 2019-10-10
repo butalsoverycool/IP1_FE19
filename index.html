@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="se">
+<html lang="sv">
   <head>
     <meta charset="utf-8" />
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
     <meta name="description" content="" />
-    <title>Individuell Projektuppgift 1, FE19 Kim Nkoubou</title> 
+    <title>Individuell Projektuppgift 1, FE19 Kim Nkoubou - start</title> 
       
     <!-- CSS RESET -->
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
@@ -49,7 +49,7 @@
                     </button>
                     <!-- LOGO (kyh.se-link) -->
                     <span class="link_logotype navbar-brand" data-link="intro-wrap">
-                        <img class="hover-grow" src="media/de_la_mottez.svg" alt="de_la_mottez_logo" />
+                        <img class="grow-contrast-fx" src="media/de_la_mottez.svg" alt="de_la_mottez_logo" />
                     </span>
                 </div>
                 <div class="collapse navbar-collapse flex-cont" id="theNav">
@@ -64,71 +64,80 @@
     </header>
     
     <main>
-        <div class="section-wrap flex-cont .bg-info" id="intro-wrap">
+        <section class="section-wrap flex-cont .bg-info" id="intro-wrap">
             <div class="title-cont">
                 <h1>Förgyll din tillställning med vacker musik och sång</h1>
             </div>
-        </div>
+        </section>
             
-        <div class="section-wrap flex-cont" id="pres-wrap">
-            <div class="title-cont mic"><h2>För Bröllopet, dopet, minnesstunden och festen</h2></div>
-            
-            <div class="solid-bg-1"><p>Med vacker sång ackompanjerat av känslofyllt piano lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus laoreet non curabitur gravida arcu ac. Molestie a iaculis at erat pellentesque. Tellus in metus vulputate eu scelerisque. Vel orci porta non pulvinar neque. Dui nunc mattis enim ut tellus elementum sagittis.
-            </p></div>
-        </div>
+        <section class="section-wrap flex-cont" id="pres-wrap">
+            <div class="title-cont mic">
+                <h2>För Bröllopet, dopet, minnesstunden och festen</h2>
+            </div>
+            <div class="material-cont flex-cont flex-col solid-bg-1 grow-fx">
+                <p>Med vacker sång ackompanjerat av känslofyllt piano lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus laoreet non curabitur gravida arcu ac. Molestie a iaculis at erat pellentesque. Tellus in metus vulputate eu scelerisque. 
+                </p> 
+                <button class="booking-btn link-btn" data-link="contact-wrap">Bokningsförfrågan</button>
+            </div>
+        </section>
 
-        <div class="section-wrap flex-cont flex-rev" id="listen-wrap">
+        <section class="section-wrap flex-cont flex-rev" id="listen-wrap">
             <div class="title-cont guitargirl"><h2>Lyssna</h2></div>
-            <div class="solid-bg-1">Låt 1</div>
-            <div class="solid-bg-2">Låt 2</div>
-            <div class="solid-bg-3">Låt 3</div>
+            <div class="solid-bg-1 grow-fx">Låt 1</div>
+            <div class="solid-bg-2 grow-fx">Låt 2</div>
+            <div class="solid-bg-3 grow-fx">Låt 3</div>
                 
-        </div> <!-- info-wrap -->
+        </section> <!-- info-wrap -->
         
-        <div class="section-wrap flex-cont" id="about-wrap">
+        <section class="section-wrap flex-cont" id="about-wrap">
             <div class="title-cont piano"><h2>Om oss</h2></div>
             
             <div class="solid-bg-1"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus laoreet non curabitur gravida arcu ac. Molestie a iaculis at erat pellentesque. Tellus in metus vulputate eu scelerisque. Vel orci porta non pulvinar neque. Dui nunc mattis enim ut tellus elementum sagittis. Amet purus gravida quis blandit turpis cursus in hac. Aliquet bibendum enim facilisis gravida neque convallis a cras. Ut porttitor leo a diam sollicitudin tempor id. Volutpat maecenas volutpat blandit aliquam etiam erat velit.
             </p></div>
-        </div>
+        </section>
         
     </main>
     <footer>
-        <div class="section-wrap flex-cont" id="contact-wrap">
+        <section class="section-wrap flex-cont" id="contact-wrap">
             <div class="title-cont"><h2>Kontakta oss</h2></div>
             
-            <form name="contact-form" id="contact-form" class="flex-cont" action="">
-                <label for="-contactname">Namn</label>
-                <input id="contact-name" type="text" />
+            <form name="contactForm" id="contact-form" class="flex-cont" action="contact-made/index.html">
+                <label for="contact-name">Namn</label>
+                <input id="contact-name" name="fName" type="text" maxlength="50" required />
+                
+                <label for="contact-email">Epost</label>
+                <input id="contact-email" name="fEmail" type="email" required />
                 
                 <label for="contact-msg">Meddelande</label>
-                <textarea id="contact-msg" rows="5"></textarea> 
+                <textarea id="contact-msg" name="fMsg" rows="5" maxlength="500" required></textarea> 
                 
                 <label for="contact-ref">Hur hittade du oss?</label>
                 <div class="contact-radio solid-bg-1">
-                    <input type="radio" name="contact-ref" value="person"> 
+                    <input type="radio" class="contact-ref" name="fRef" value="rekommendation"  required /> 
                     <p>Personlig rekommendation</p>
                 </div>
                 <div class="contact-radio solid-bg-2">
-                    <input type="radio" name="contact-ref" value="google">
+                    <input type="radio" class="contact-ref" name="fRef" value="Google" />
                     <p>Google eller annan sökmotor</p>
                 </div>
                 <div class="contact-radio solid-bg-1">
-                    <input type="radio" name="contact-ref" value="facebook">
+                    <input type="radio" class="contact-ref" name="fRef" value="Facebook" />
                     <p>Facebook</p>
                 </div>
                 <div class="contact-radio solid-bg-2">
-                    <input type="radio" name="contact-ref" value="instagram">
+                    <input type="radio" class="contact-ref" name="fRef" value="Instagram" />
                     <p>Instagram</p>
                 </div>
                 <div class="contact-radio solid-bg-1">
-                    <input type="radio" name="contact-ref" value="other">
+                    <input type="radio" class="contact-ref" name="fRef" value="oklart" />
                     <p>Annat</p>
                 </div>
                 
+                <ul class="errorList"></ul>
+                
                 <input id="contact-submit" type="submit" value="Skicka" />
             </form>
-        </div>
+        </section>
     </footer>
 </div> <!-- wrapper -->  
     
