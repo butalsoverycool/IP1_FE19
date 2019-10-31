@@ -24,7 +24,18 @@ This is my first individual school project in the Front Dev class at KYH Stockho
         autoscroll vid klick på navlänkar i interaction.js
             valde att köra js-Elements egen scrollIntoView() ist för nån plugin
                 https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
+
 10 okt   
     fake-formvalidation med js
+
+23 okt
+    Uppdaterat funktionalitet i interaction.js
+    Sett över SEO-basics
+    Sett över Accessibility-basics
+    
+24 okt
+    Rättat till buggar i interaction.js
+
+
 
         

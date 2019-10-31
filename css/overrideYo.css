@@ -39,12 +39,11 @@ nav {
 
 .nav.navbar-nav>li>button {
     color: #C9C9C9;
+    cursor: pointer;
     background: none!important;
     margin-right: 20px;
     transition-duration: .3s;
 }
-
-
 
 
 .nav.navbar-nav>li>button:hover {
@@ -140,4 +139,3 @@ nav {
         display:block !important;
     }
 }
-

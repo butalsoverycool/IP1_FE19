@@ -2,15 +2,9 @@
 *
 * TAGS OVERALL
 *******************************************/
-#wrapper {
-    overflow: hidden;
-}
 body {
     background: #222;
     color: #C9C9C9;
-}
-nav {
-    width: 100vw!important;
 }
 
 main {
@@ -18,18 +12,8 @@ main {
 }
 
 h1 {
-    text-align: center;  
+    text-align: center;
 }
-h1.landing {
-    filter: blur(5px);
-    animation: blur-in 2s forwards linear 1s 1;
-}
-
-*,
-*:focus {
-    outline: none;
-}
-
 
 @media screen and (max-width: 700px) {
     body {
@@ -43,12 +27,6 @@ p {
 
 button {
     border: none;
-}
-
-a:focus,
-a:hover {
-    text-decoration: none!important;
-    color: white;
 }
 
 /*
@@ -108,19 +86,11 @@ a:hover {
 *
 * HEADER
 *******************************************/
-@media screen and (max-width: 599px) {
-    .navbar-nav {
-        margin: 0;
-    }
-    #theNav {
-        box-shadow: 0px 10px 10px rgb(2, 1, 1);
-    }
-}
 
-@media screen and (min-width: 600px) {
-    .navbar-nav {
-        height: 50px;
-    }
+
+
+.navbar {
+    height: 50px;
 }
 
 .container-fluid {
@@ -153,7 +123,7 @@ a:hover {
 }
 
 /* fake links */
-.navbar-nav > li > span {
+.navbar-nav > li > button {
     
 }
 
@@ -179,12 +149,13 @@ a:hover {
 /*
 * MAIN SECTIONS
 ******************************************/
-
-
-.section-wrap.flex-cont{
+.flex-cont {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.section-wrap.flex-cont{
     flex-flow: row nowrap;
     align-content: space-between;
     align-items: stretch;
@@ -266,11 +237,8 @@ a:hover {
 }
 
 #intro-wrap {
-    min-height: 300px;
-}
-
-#intro-wrap .title-cont {
     
+    min-height: auto;
 }
 
 #pres-wrap .link-btn {
@@ -280,41 +248,6 @@ a:hover {
     max-height: unset;
     font-size: 2em;
     margin: 50px auto;
-    color: #C9C9C9;
-    background: #222;
-    padding: 10px;
-}
-
-
-/*
-* AUDIO
-***********/
-.flex-cont[data-song] {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-a[data-song][aria-pressed="true"] {
-    transform: scale(1.1);
-}
-
-a[data-song] {
-    flex-wrap: wrap;
-    color: #C9C9C9; 
-}
-
-a[data-song] i {
-    font-size: 3em;
-}
-
-@media screen and (max-width: 700px) {
-    a[data-song] {
-        flex-direction: row!important;
-        justify-content: space-around!important;
-        align-items: center;
-    }
-    
 }
 
 #contact-wrap .title-cont {
@@ -461,44 +394,3 @@ a[data-song] i {
 }
 
 
-/*
-* VIDEO
-********/
-* { box-sizing:border-box;  }
-#pres-video-cont  { 
-    text-align:center; position:relative;  color:#ffffff; width:100vw;  overflow:hidden; padding: 0;
-    background: #222 url(../media/ge_upp_screenShot.jpg);
-}
-.bg-image     { background-size:cover; background-position:center center; }
-.title-cont.overlay    { position:relative; padding: 10px; height:100%; width:100%!important; z-index:2; display: flex; align-items: center;}
-.inner      { padding-top:50px; }
-  h1      { color:#ffffff; margin:0 auto; }
-.video_wrap   { height:100%; width: 890px; min-width: 100%; position:absolute; left:-2; overflow:hidden; top:0; padding: 0; } 
-#pres-video-player { height: 100%; }
-iframe      { height:600px; position:absolute; width: auto; min-width: 100%; top:0; left:0; }
-
-@media screen and (max-width: 700px) {
-    .video_wrap {
-        height: 399px;
-    }
-}
-
-/*
-* CURSOR
-***********/
-* {
-    cursor: default!important;
-}
-.nav.navbar-nav>li>button,
-.navbar-toggle,
-.navbar-toggle *,
-.link_logotype,
-.link_logotype *,
-.link-btn,
-.link-btn *,
-a[data-song],
-a[data-song] *,
-input[type="submit"],
-input[type="radio"] {
-    cursor: pointer!important;
-}

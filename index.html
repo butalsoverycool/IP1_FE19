@@ -1,147 +1,204 @@
 <!DOCTYPE html>
 <html lang="sv">
-  <head>
+
+<head>
     <meta charset="utf-8" />
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-    <meta name="description" content="" />
-    <title>Individuell Projektuppgift 1, FE19 Kim Nkoubou - start</title> 
-      
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="de la Mottes förgyller din tillställning med stämningsfull musik. Lyssna eller skicka en bokningsförfrågan direkt." />
+    <title>de la MOTTES | musik till dopet, bröllopet, minnesstunden, minglet och festen</title>
+
     <!-- CSS RESET -->
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
 
 
     <!-- Bootstrap 3 (latest compiled and minified CSS) -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
-      
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Bootstrap fontawesome -->
+    <script src="https://kit.fontawesome.com/0a926e0516.js" crossorigin="anonymous"></script>
+
     <!-- Bootstrap override -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap_override.css" />
-      
-    
-      
+
+
+
     <!--Jquery-->
     <!-- from google -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      
+
     <!-- Bootstrap js -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- tryin out appear.js for elem-detection on scroll 
     (http://creativelive.github.io/appear/) -->
     <!-- <script src="appear1.2.1.js"></script> -->
-    
+
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/animations.css" />
 </head>
 
 <body>
-<div id="wrapper">
-    <header>  
-        <!-- NAV -->
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#theNav">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!-- LOGO (kyh.se-link) -->
-                    <span class="link_logotype navbar-brand" data-link="intro-wrap">
-                        <img class="grow-contrast-fx" src="media/de_la_mottez.svg" alt="de_la_mottez_logo" />
-                    </span>
+    <div id="wrapper">
+        <header>
+            <!-- NAV -->
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <div id="navbar-toggle-container">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#collapse-wrapper-nav">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <!-- LOGO (kyh.se-link) -->
+                        <span class="link_logotype navbar-brand">
+                            <img data-link="intro-wrap" class="grow-contrast-fx" src="media/de_la_mottez_logo.svg"
+                                alt="de la mottez logotype" />
+                        </span>
+                    </div>
+                    <div id="collapse-wrapper-nav" class="collapse navbar-collapse ">
+                        <div class="flex-cont clearfix" id="theNav">
+                            <ul class="nav navbar-nav">
+                                <li><button class="navlink" data-link="listen-wrap">Lyssna</button></li>
+                                <li><button class="navlink" data-link="about-wrap">Om</button></li>
+                                <li><button class="navlink" data-link="contact-wrap">Kontakta oss</button></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="collapse navbar-collapse flex-cont" id="theNav">
-                    <ul class="nav navbar-nav">
-                        <li><span data-link="listen-wrap">Lyssna</span></li>
-                        <li><span data-link="about-wrap">Om</span></li>
-                        <li><span data-link="contact-wrap">Kontakta oss</span></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    
-    <main>
-        <section class="section-wrap flex-cont .bg-info" id="intro-wrap">
-            <div class="title-cont">
-                <h1>Förgyll din tillställning med vacker musik och sång</h1>
-            </div>
-        </section>
-            
-        <section class="section-wrap flex-cont" id="pres-wrap">
-            <div class="title-cont mic">
-                <h2>För Bröllopet, dopet, minnesstunden och festen</h2>
-            </div>
-            <div class="material-cont flex-cont flex-col solid-bg-1 grow-fx">
-                <p>Med vacker sång ackompanjerat av känslofyllt piano lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus laoreet non curabitur gravida arcu ac. Molestie a iaculis at erat pellentesque. Tellus in metus vulputate eu scelerisque. 
-                </p> 
-                <button class="booking-btn link-btn" data-link="contact-wrap">Bokningsförfrågan</button>
-            </div>
-        </section>
+            </nav>
+        </header>
 
-        <section class="section-wrap flex-cont flex-rev" id="listen-wrap">
-            <div class="title-cont guitargirl"><h2>Lyssna</h2></div>
-            <div class="solid-bg-1 grow-fx">Låt 1</div>
-            <div class="solid-bg-2 grow-fx">Låt 2</div>
-            <div class="solid-bg-3 grow-fx">Låt 3</div>
-                
-        </section> <!-- info-wrap -->
-        
-        <section class="section-wrap flex-cont" id="about-wrap">
-            <div class="title-cont piano"><h2>Om oss</h2></div>
-            
-            <div class="solid-bg-1"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus laoreet non curabitur gravida arcu ac. Molestie a iaculis at erat pellentesque. Tellus in metus vulputate eu scelerisque. Vel orci porta non pulvinar neque. Dui nunc mattis enim ut tellus elementum sagittis. Amet purus gravida quis blandit turpis cursus in hac. Aliquet bibendum enim facilisis gravida neque convallis a cras. Ut porttitor leo a diam sollicitudin tempor id. Volutpat maecenas volutpat blandit aliquam etiam erat velit.
-            </p></div>
-        </section>
-        
-    </main>
-    <footer>
-        <section class="section-wrap flex-cont" id="contact-wrap">
-            <div class="title-cont"><h2>Kontakta oss</h2></div>
-            
-            <form name="contactForm" id="contact-form" class="flex-cont" action="contact-made/index.html">
-                <label for="contact-name">Namn</label>
-                <input id="contact-name" name="fName" type="text" maxlength="50" required />
-                
-                <label for="contact-email">Epost</label>
-                <input id="contact-email" name="fEmail" type="email" required />
-                
-                <label for="contact-msg">Meddelande</label>
-                <textarea id="contact-msg" name="fMsg" rows="5" maxlength="500" required></textarea> 
-                
-                <label for="contact-ref">Hur hittade du oss?</label>
-                <div class="contact-radio solid-bg-1">
-                    <input type="radio" class="contact-ref" name="fRef" value="rekommendation"  required /> 
-                    <p>Personlig rekommendation</p>
+
+
+        <main>
+            <section class="section-wrap flex-cont .bg-info" id="intro-wrap">
+                <div class="title-cont guitargirl">
+                    <h1 class="landing">Förgyll din tillställning med vacker musik och sång</h1>
                 </div>
-                <div class="contact-radio solid-bg-2">
-                    <input type="radio" class="contact-ref" name="fRef" value="Google" />
-                    <p>Google eller annan sökmotor</p>
+            </section>
+
+            <section class="section-wrap flex-cont" id="pres-wrap">
+                <div id="pres-video-cont" class="bg-image">
+                    <div class="title-cont overlay">
+                        <h2>För Bröllopet, dopet, minnesstunden och festen</h2>
+                    </div>
+                    <div class="video_wrap" style="display:none">
+                        <div id="pres-video-player"></div>
+                    </div>
                 </div>
-                <div class="contact-radio solid-bg-1">
-                    <input type="radio" class="contact-ref" name="fRef" value="Facebook" />
-                    <p>Facebook</p>
+
+                <div class="material-cont flex-cont flex-col solid-bg-1 grow-fx">
+                    <p>Med vacker sång ackompanjerat av känslofyllt piano lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus
+                        laoreet non curabitur gravida arcu ac. Molestie a iaculis at erat pellentesque. Tellus in metus
+                        vulputate eu scelerisque.
+                    </p>
+                    <button class="booking-btn link-btn" data-link="contact-wrap">Bokningsförfrågan</button>
                 </div>
-                <div class="contact-radio solid-bg-2">
-                    <input type="radio" class="contact-ref" name="fRef" value="Instagram" />
-                    <p>Instagram</p>
+            </section>
+
+            <section class="section-wrap flex-cont flex-rev" id="listen-wrap">
+                <div class="title-cont mic">
+                    <h2>Lyssna</h2>
                 </div>
-                <div class="contact-radio solid-bg-1">
-                    <input type="radio" class="contact-ref" name="fRef" value="oklart" />
-                    <p>Annat</p>
+
+                <a data-song href="https://ia902508.us.archive.org/5/items/testmp3testfile/mpthreetest.mp3"
+                    class="solid-bg-1 grow-fx flex-cont flex-col">
+                    <p class="song-title">Låt 1</p>
+                    <div class="song-play"><i class="fas fa-play"></i></div>
+                </a>
+                <a data-song href="https://ia902508.us.archive.org/5/items/testmp3testfile/mpthreetest.mp3"
+                    class="solid-bg-2 grow-fx flex-cont flex-col">
+                    <p class="song-title">Låt 2</p>
+                    <div class="song-play"><i class="fas fa-play"></i></div>
+                </a>
+                <a data-song href="https://ia902508.us.archive.org/5/items/testmp3testfile/mpthreetest.mp3"
+                    class=" solid-bg-3 grow-fx flex-cont flex-col">
+                    <p class="song-title">Låt 3</p>
+                    <div class="song-play"><i class="fas fa-play"></i></div>
+                </a>
+
+            </section> <!-- info-wrap -->
+
+            <section class="section-wrap flex-cont" id="about-wrap">
+                <div class="title-cont piano">
+                    <h2>Om oss</h2>
                 </div>
-                
-                <ul class="errorList"></ul>
-                
-                <input id="contact-submit" type="submit" value="Skicka" />
-            </form>
-        </section>
-    </footer>
-</div> <!-- wrapper -->  
-    
+
+                <div class="solid-bg-1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Lacus laoreet non curabitur gravida arcu ac. Molestie a iaculis
+                        at erat pellentesque. Tellus in metus vulputate eu scelerisque. Vel orci porta non pulvinar
+                        neque. Dui nunc mattis enim ut tellus elementum sagittis. Amet purus gravida quis blandit turpis
+                        cursus in hac. Aliquet bibendum enim facilisis gravida neque convallis a cras. Ut porttitor leo
+                        a diam sollicitudin tempor id. Volutpat maecenas volutpat blandit aliquam etiam erat velit.
+                    </p>
+                </div>
+            </section>
+
+        </main>
+        <footer>
+            <section class="section-wrap flex-cont" id="contact-wrap">
+                <div class="title-cont">
+                    <h2>Kontakta oss</h2>
+                </div>
+
+                <form name="contactForm" id="contact-form" class="flex-cont" action="contact-made/index.html">
+
+                    <label for="contact-name">Namn</label>
+                    <input id="contact-name" name="fName" type="text" maxlength="50" required />
+
+                    <label for="contact-email">Epost</label>
+                    <input id="contact-email" name="fEmail" type="email" required />
+
+                    <label for="contact-msg">Meddelande</label>
+                    <textarea id="contact-msg" name="fMsg" rows="5" maxlength="500" required></textarea>
+
+                    <fieldset id="contact-ref">
+                        <legend>Hur hittade du oss?</legend>
+                        <div class="contact-radio solid-bg-1">
+                            <input type="radio" id="fRekommendation" class="contact-ref" name="fRef"
+                                value="rekommendation" required />
+                            <label for="fRekommendation">Personlig rekommendation</label>
+                        </div>
+                        <div class="contact-radio solid-bg-2">
+                            <input type="radio" id="fGoogle" class="contact-ref" name="fRef" value="Google" />
+                            <label for="fGoogle">Google eller annan sökmotor</label>
+                        </div>
+                        <div class="contact-radio solid-bg-1">
+                            <input type="radio" id="fFacebook" class="contact-ref" name="fRef" value="Facebook" />
+                            <label for="fFacebook">Facebook</label>
+                        </div>
+                        <div class="contact-radio solid-bg-2">
+                            <input type="radio" id="fInstagram" class="contact-ref" name="fRef" value="Instagram" />
+                            <label for="fInstagram">Instagram</label>
+                        </div>
+                        <div class="contact-radio solid-bg-1">
+                            <input type="radio" id="fOklart" class="contact-ref" name="fRef" value="oklart" />
+                            <label for="fOklart">Annat</label>
+                        </div>
+                    </fieldset>
+
+                    <ul class="errorList"></ul>
+
+                    <input id="contact-submit" class="btn submit" type="submit" value="Skicka" />
+                </form>
+            </section>
+        </footer>
+    </div> <!-- wrapper -->
+
     <!-- interaction.js -->
     <script src="js/interaction.js"></script>
+
+    <!-- accessibility.js -->
+    <script src="js/accessibility.js"></script>
 </body>
+
 </html>
