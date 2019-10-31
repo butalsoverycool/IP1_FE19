@@ -14,7 +14,6 @@ $(function () {
         let navOpen = document.querySelector('#collapse-wrapper-nav')
             .classList.contains('show');
         if (navOpen) {
-            console.log('togggggggle')
             $('.navbar-toggle').click();
         }
     });
@@ -313,7 +312,6 @@ $(function () {
 
         //if on contact-made-page...
         if (window.location.pathname.includes('/contact-made/index.html')) {
-            console.log(window.location.pathname);
             //for now...just hide/remove nav
             $('#theNav').html('');
             $('.navbar-toggle').css('display', 'none');
@@ -358,7 +356,6 @@ $(function () {
             e.target = isAudioChild(e.target).node;
         }
         if (e.target.hasAttribute('data-song')) {
-            console.log('Clicked on audio');
             interactionJS.playAudio(e);
             return;
         }

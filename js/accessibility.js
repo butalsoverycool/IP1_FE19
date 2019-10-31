@@ -4,6 +4,7 @@
 
 // run but in local scope
 (function () {
+    'use strict';
     const accessibilityJS = {};
 
     // REMOVE NAVBAR TOGGLE BTN IF WHEN NOT NEEDED
