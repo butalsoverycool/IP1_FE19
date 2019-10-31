@@ -502,3 +502,43 @@ input[type="submit"],
 input[type="radio"] {
     cursor: pointer!important;
 }
+
+/*
+* TOOLTIPS
+************/
+/*.tooltip {
+    display:inline-block;
+    position:relative;
+    border-bottom:1px dotted #666;
+    text-align:left;
+}*/
+
+.tooltipCont .theTooltip {
+    min-width:100px; 
+    max-width:300px;
+    top:40px;
+    left:50%;
+    transform:translate(-50%, 0);
+    padding:10px 20px;
+    color:#C9C9C9;
+    background-color:#222;
+    font-weight:normal;
+    font-size:13px;
+    border-radius:8px;
+    position:absolute;
+    z-index:99999999;
+    box-sizing:border-box;
+    box-shadow:0 1px 8px #000;
+   
+    visibility:hidden; opacity:0; transition:opacity 0.8s;
+}
+
+.tooltipCont:hover .theTooltip {
+    visibility:visible; opacity:1;
+}
+
+.tooltipCont .theTooltip i {
+    font-size: 2em;
+}
+
+

@@ -55,15 +55,7 @@ $(function () {
             return;
         }
 
-        if (event.target.tagName == 'I'
-            || event.target.tagName == 'P'
-            || event.target.tagName == 'DIV') {
-            event.target = event.target.closest('a[data-song]');
-        }
-
-        console.log(event.target);
-
-        // Prevent link default
+        // Prevent link default, don't go to download-page
         event.preventDefault();
 
 
@@ -74,6 +66,8 @@ $(function () {
             $(event.target).children('div').children('i').attr('class', 'fas fa-play');
             return;
         }
+
+
 
         $(event.target).children('div').children('i').attr('class', 'fas fa-pause');
 
@@ -127,9 +121,24 @@ $(function () {
             return;
         }
 
+        const isAudioChild = (child) => {
+            var node = child.parentNode;
+            while (node != null) {
+                if (node.hasAttribute('data-song')) {
+                    return { res: true, node: node };
+                }
+                node = node.parentNode;
+            }
+            return { res: false, node: null };
+        }
+
         //audio?
+        // If target points to child or grandchild, point to parent [data-song]-parent
+        if (!e.target.hasAttribute('data-song') && isAudioChild(e.target).res) {
+            e.target = isAudioChild(e.target).node;
+        }
         if (e.target.hasAttribute('data-song')) {
-            console.log('clicked on audio');
+            console.log('Clicked on audio');
             playAudio(e);
             return;
         }

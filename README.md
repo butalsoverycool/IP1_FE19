@@ -36,6 +36,11 @@ This is my first individual school project in the Front Dev class at KYH Stockho
 24 okt
     Rättat till buggar i interaction.js
 
+31 okt 
+    Overall update.
+    Accessibility-tests made (https://achecker.ca/, https://wave.webaim.org)
+    
+
 
 
         
