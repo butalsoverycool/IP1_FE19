@@ -39,6 +39,8 @@ This is my first individual school project in the Front Dev class at KYH Stockho
 31 okt 
     Overall update.
     Accessibility-tests made (https://achecker.ca/, https://wave.webaim.org)
+    Overall fixes (audio, navbar, scopes)
+
     
 
 

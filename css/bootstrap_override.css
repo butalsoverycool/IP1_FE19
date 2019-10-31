@@ -5,7 +5,6 @@ nav {
     border: none!important;
 }
 
-
 .container-fluid {
     padding-left: 0!important;
     padding-right: 0!important;
@@ -36,16 +35,12 @@ nav {
     align-items: center;
 }
 
-
 .nav.navbar-nav>li>button {
     color: #C9C9C9;
     background: none!important;
     margin-right: 20px;
     transition-duration: .3s;
 }
-
-
-
 
 .nav.navbar-nav>li>button:hover {
     color: #FFF;

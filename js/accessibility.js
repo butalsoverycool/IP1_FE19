@@ -1,9 +1,13 @@
+/*
+* ACCESSIBILITY JS
+***************************/
+
 // run but in local scope
 (function () {
-    console.log('accessibility.js ready');
+    const accessibilityJS = {};
 
     // REMOVE NAVBAR TOGGLE BTN IF WHEN NOT NEEDED
-    const updateNavToggleBtn = () => {
+    accessibilityJS.updateNavToggleBtn = (() => {
         const
             wide = window.outerWidth > 599 ? true : false,
             btn = document.querySelector('.navbar-toggle'),
@@ -24,7 +28,12 @@
             document.querySelector('#navbar-toggle-container').innerHTML = newBtn;
             console.log('created toggle btn');
         }
-    }
-    updateNavToggleBtn();
+    })();
 
+    // list active funcs
+    let funcs = [];
+    for (let func in accessibilityJS) {
+        funcs.push(func);
+    }
+    console.log('accessibility.js in da game', funcs);
 })(); //local scope
